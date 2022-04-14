@@ -1,0 +1,23 @@
+name: cg37
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - dask
+  - numpy=1.21
+  - xarray=0.20
+  - python=3.7
+  - h5netcdf
+  - h5py
+  - xesmf=0.3
+  - esmpy=7.1.0
+  - netcdf4
+  - matplotlib
+  - cartopy=0.20
+  - line_profiler
+  - ipympl
+  - numba
+  - scipy
+  - ipykernel
+  - scikit-learn
+  - nc-time-axis
