@@ -13,4 +13,16 @@ bash -i create_cg37.sh
 
 # Packages 
 
-ipykernel -- multi kernel for jupyter
+ipykernel: enable multiple IPython kernels for different virtualenvs or conda environments
+https://ipython.readthedocs.io/en/stable/install/kernel_install.html
+
+numba: can be as fast as any compiled language (add JIT just in time compiler to python)
+https://numba.pydata.org/
+
+Matplotlib: plotting lib for python
+
+Xarray: for n dimensional data
+
+Xesmf: regridding 
+
+CuPY: CUDA with a numpy interface (uses GPU and speeds up the calculation for free)
