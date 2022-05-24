@@ -1,6 +1,5 @@
 # How to Create Conda Environment:
 ## Shell
-
 have to use interactive bash to find conda PATH etc.
 
 > bash -i create_cg37.sh
@@ -22,7 +21,7 @@ https://numba.pydata.org/
 
 Matplotlib: plotting lib for python
 
-Xarray: for n dimensional data
+Xarray: for labelled multi-dimensional arrays. Netcdf files
 
 Xesmf: regridding 
 
