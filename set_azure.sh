@@ -17,20 +17,21 @@ trap 'echo "\"${last_command}\" command filed with exit code $?."' EXIT
 # command starts here
 
 echo $SHELL
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh -b
-
+wget -O install_miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash install_miniconda.sh -b
+export PATH="/home/azurecw55/miniconda3/bin:$PATH"
 conda init bash
 source .bashrc
 
-conda create -y -n cg_pytorch python=3.10 numpy=1.21
+echo "
+conda create -y -n cg_pytorch python=3.10 numpy jupyterlab
 conda activate cg_pytorch
-conda install -y pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install -y pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
 conda install -y -c conda-forge matplotlib=3 cartopy scipy scikit-learn numba ipykernel
 conda install -y -c conda-forge xarray netcdf4
-conda install -y -c conda-forge jupyterlab
 python -m ipykernel install --user --name pytorch
 conda deactivate
+" > pytorch_env.sh
+bash -i pytorch_env.sh
 echo 'conda enviroment for pytorch created!'
 exit
-
