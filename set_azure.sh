@@ -20,6 +20,7 @@ echo $SHELL
 wget -O install_miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash install_miniconda.sh -b
 export PATH="/home/azurecw55/miniconda3/bin:$PATH"
+echo $PATH
 conda init bash
 source .bashrc
 
