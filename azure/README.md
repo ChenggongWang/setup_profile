@@ -14,6 +14,6 @@ Then, download and run setup_azure.sh to install conda and pytorch env.
 
 ## data science VM
 
-automatically setup jupyterhub server and gpu drive
+automatically setup jupyterhub server and gpu driver
 
 ref: https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro?source=recommendations
