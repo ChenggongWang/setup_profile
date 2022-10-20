@@ -1,8 +1,8 @@
 #!/bin/bash 
 
 ###################################################################
-#Script Name : create_pytorch.sh
-#Description : Create a conda env for common use
+#Script Name : set_azure.sh
+#Description : install mininconda and create env
 #Args        : 
 #Author      : Chenggong Wang 
 #Email       : c.wang@princeton.edu  
