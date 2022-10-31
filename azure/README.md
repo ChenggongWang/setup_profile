@@ -17,7 +17,9 @@ Then, download and run setup_azure.sh to install conda and pytorch env.
 automatically setup jupyterhub server and gpu driver
 
 ref: https://learn.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro?source=recommendations
-
+create env for pytorch
+'conda init bash'
+'bash -i create_pytorch.sh'
 
 ## Note
 ### solve: torch.cuda.is_available() false
