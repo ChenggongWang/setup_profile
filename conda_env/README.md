@@ -2,13 +2,7 @@
 ## Shell
 have to use interactive bash to find conda PATH etc.
 
-> bash -i create_cg37.sh
-
-## From yml file
-### 1 solve dependencies with conda (good for across platfrom, about 6 min)
-> conda env create --file cg37_required.yml
-### 2 fully solved environment (~1min)
-> conda env create --file cg37_explicit.yml
+> bash create_cg310.sh
 
 
 # Packages 
@@ -25,4 +19,3 @@ Xarray: for labelled multi-dimensional arrays. Netcdf files
 
 Xesmf: regridding 
 
-CuPY: CUDA with a numpy interface (uses GPU and speeds up the calculation for free)
