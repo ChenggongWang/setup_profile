@@ -21,7 +21,7 @@ source /usr/licensed/anaconda3/2023.3/etc/profile.d/conda.sh
 echo $SHELL
 conda create -y -n cg310 python=3.10 numpy
 conda activate cg310
-conda install -c conda-forge xarray dask netCDF4 bottleneck cftime
+conda install -y -c conda-forge xarray dask netCDF4 bottleneck cftime
 conda install -y -c conda-forge xesmf=0.7.1 esmpy h5py h5netcdf 
 conda install -y -c conda-forge cartopy matplotlib seaborn
 conda install -y -c conda-forge nc-time-axis ipympl scipy scikit-learn line_profiler numba ipykernel 
